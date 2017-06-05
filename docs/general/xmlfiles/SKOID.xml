@@ -1,0 +1,187 @@
+<ID>
+  <ITEM type="scene">
+    <TITLE>Intoduction</TITLE>
+    <NOTES><![CDATA[Author's notes here]]></NOTES>
+    <mattextS><![CDATA[你好！]]></mattextS>
+    <mattextR><![CDATA[]]></mattextR>
+    <mattextD><![CDATA[]]></mattextD>
+    <PageConfig>
+      <BKIMG><![CDATA[]]></BKIMG>
+      <Transparent><![CDATA[false]]></Transparent>
+      <CompLocation X="0" Y="0"/>
+      <AVATAR Teacher="cb/Chinese/Liang/Output/Lee.swf" Student1="cb/Chinese/Hui/Output/Lily.swf" Student2="" Student3="" useStudent1="false" useStudent2="false" useStudent3="false" showStudent1="true" showStudent2="false" showStudent3="false" showTeacher="true" TX="0" S1X="0" S2X="0" S3X="0" TY="0" S1Y="0" S2Y="0" S3Y="0" useTeacher="true" TeacherPub="cb/Chinese/Liang/Output/Lee_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student1Pub="cb/Chinese/Hui/Output/Lily_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student2Pub="" Student3Pub=""/>
+      <MediaURLXML YouTubeStarting="-1" YouTubeEnding="-1"/>
+      <YOUTUBE>
+        <HotPosition1>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition1>
+        <HotPosition2>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition2>
+        <HotPosition3>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition3>
+      </YOUTUBE>
+      <MediaTypeXML/>
+      <SKOMsg/>
+      <POPChoice Title="" Message="" enabled="false"/>
+      <UseAIML>0</UseAIML>
+      <AllowBookMark>1</AllowBookMark>
+      <PlayStyle delay="">auto</PlayStyle>
+      <EnableBigImage>0</EnableBigImage>
+      <PnQs/>
+    </PageConfig>
+    <PnQs/>
+  </ITEM>
+  <ITEM type="scene">
+    <TITLE>First</TITLE>
+    <NOTES><![CDATA[First Exp]]></NOTES>
+    <mattextS><![CDATA[你好！]]></mattextS>
+    <mattextR><![CDATA[]]></mattextR>
+    <mattextD><![CDATA[]]></mattextD>
+    <PageConfig>
+      <BKIMG><![CDATA[]]></BKIMG>
+      <Transparent><![CDATA[false]]></Transparent>
+      <CompLocation X="0" Y="0"/>
+      <AVATAR Teacher="cb/Chinese/Liang/Output/Lee.swf" Student1="cb/Chinese/Hui/Output/Lily.swf" Student2="" Student3="" useStudent1="true" useStudent2="false" useStudent3="false" showStudent1="true" showStudent2="false" showStudent3="false" showTeacher="true" TX="0" S1X="0" S2X="0" S3X="0" TY="0" S1Y="0" S2Y="0" S3Y="0" useTeacher="false" TeacherPub="cb/Chinese/Liang/Output/Lee_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student1Pub="cb/Chinese/Hui/Output/Lily_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student2Pub="" Student3Pub=""/>
+      <MediaURLXML YouTubeStarting="-1" YouTubeEnding="-1"/>
+      <YOUTUBE>
+        <HotPosition1>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition1>
+        <HotPosition2>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition2>
+        <HotPosition3>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition3>
+      </YOUTUBE>
+      <MediaTypeXML/>
+      <SKOMsg/>
+      <POPChoice Title="" Message="" enabled="false"/>
+      <UseAIML>0</UseAIML>
+      <AllowBookMark>1</AllowBookMark>
+      <PlayStyle delay="">auto</PlayStyle>
+      <EnableBigImage>0</EnableBigImage>
+      <PnQs/>
+    </PageConfig>
+    <PnQs/>
+  </ITEM>
+  <ITEM type="scene">
+    <TITLE>Second</TITLE>
+    <NOTES><![CDATA[]]></NOTES>
+    <mattextS><![CDATA[你好！]]></mattextS>
+    <mattextR><![CDATA[]]></mattextR>
+    <mattextD><![CDATA[]]></mattextD>
+    <PageConfig>
+      <BKIMG><![CDATA[]]></BKIMG>
+      <Transparent><![CDATA[false]]></Transparent>
+      <CompLocation X="0" Y="0"/>
+      <AVATAR Teacher="cb/skodefault.swf" Student1="cb/SKOChar4/Output/SKOChar4.swf" Student2="cb/SKOChar7/Output/SKOChar7.swf" Student3="" useStudent1="true" useStudent2="false" useStudent3="false" showStudent1="true" showStudent2="false" showStudent3="false" showTeacher="true" TX="0" S1X="0" S2X="0" S3X="0" TY="0" S1Y="0" S2Y="0" S3Y="0" useTeacher="false" TeacherPub="cb/skodefault_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student1Pub="cb/SKOChar4/Output/SKOChar4_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student2Pub="cb/SKOChar7/Output/SKOChar7_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student3Pub=""/>
+      <MediaURLXML YouTubeStarting="-1" YouTubeEnding="-1"/>
+      <YOUTUBE>
+        <HotPosition1>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition1>
+        <HotPosition2>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition2>
+        <HotPosition3>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition3>
+      </YOUTUBE>
+      <MediaTypeXML/>
+      <SKOMsg/>
+      <POPChoice Title="" Message="" enabled="false"/>
+      <UseAIML>0</UseAIML>
+      <AllowBookMark>1</AllowBookMark>
+      <PlayStyle delay="">auto</PlayStyle>
+      <EnableBigImage>0</EnableBigImage>
+      <PnQs/>
+    </PageConfig>
+    <PnQs/>
+  </ITEM>
+  <ITEM type="scene">
+    <TITLE>Third</TITLE>
+    <NOTES><![CDATA[]]></NOTES>
+    <mattextS><![CDATA[你好！]]></mattextS>
+    <mattextR><![CDATA[]]></mattextR>
+    <mattextD><![CDATA[]]></mattextD>
+    <PageConfig>
+      <BKIMG><![CDATA[]]></BKIMG>
+      <Transparent><![CDATA[false]]></Transparent>
+      <CompLocation X="0" Y="0"/>
+      <AVATAR Teacher="cb/skodefault.swf" Student1="cb/SKOChar4/Output/SKOChar4.swf" Student2="cb/SKOChar7/Output/SKOChar7.swf" Student3="" useStudent1="true" useStudent2="false" useStudent3="false" showStudent1="true" showStudent2="false" showStudent3="false" showTeacher="true" TX="0" S1X="0" S2X="0" S3X="0" TY="0" S1Y="0" S2Y="0" S3Y="0" useTeacher="false" TeacherPub="cb/skodefault_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student1Pub="cb/SKOChar4/Output/SKOChar4_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student2Pub="cb/SKOChar7/Output/SKOChar7_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student3Pub=""/>
+      <MediaURLXML YouTubeStarting="-1" YouTubeEnding="-1"/>
+      <YOUTUBE>
+        <HotPosition1>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition1>
+        <HotPosition2>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition2>
+        <HotPosition3>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition3>
+      </YOUTUBE>
+      <MediaTypeXML/>
+      <SKOMsg/>
+      <POPChoice Title="" Message="" enabled="false"/>
+      <UseAIML>0</UseAIML>
+      <AllowBookMark>1</AllowBookMark>
+      <PlayStyle delay="">auto</PlayStyle>
+      <EnableBigImage>0</EnableBigImage>
+      <PnQs/>
+    </PageConfig>
+    <PnQs/>
+  </ITEM>
+  <ITEM type="scene">
+    <TITLE>Fourth</TITLE>
+    <NOTES><![CDATA[Fouth Paragraph]]></NOTES>
+    <mattextS><![CDATA[你好！]]></mattextS>
+    <mattextR><![CDATA[]]></mattextR>
+    <mattextD><![CDATA[]]></mattextD>
+    <PageConfig>
+      <BKIMG><![CDATA[]]></BKIMG>
+      <Transparent><![CDATA[false]]></Transparent>
+      <CompLocation X="0" Y="0"/>
+      <AVATAR Teacher="cb/Chinese/Liang/Output/Lee.swf" Student1="cb/Chinese/Hui/Output/Lily.swf" Student2="" Student3="" useStudent1="false" useStudent2="false" useStudent3="false" showStudent1="true" showStudent2="false" showStudent3="false" showTeacher="true" TX="0" S1X="0" S2X="0" S3X="0" TY="0" S1Y="0" S2Y="0" S3Y="0" useTeacher="true" TeacherPub="cb/Chinese/Liang/Output/Lee_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student1Pub="cb/Chinese/Hui/Output/Lily_e2217fc8-26aa-432b-adc9-46e058d53724.swf" Student2Pub="" Student3Pub=""/>
+      <MediaURLXML YouTubeStarting="-1" YouTubeEnding="-1"/>
+      <YOUTUBE>
+        <HotPosition1>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition1>
+        <HotPosition2>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition2>
+        <HotPosition3>
+          <time>time</time>
+          <guid>Content</guid>
+        </HotPosition3>
+      </YOUTUBE>
+      <MediaTypeXML/>
+      <SKOMsg/>
+      <POPChoice Title="" Message="" enabled="false"/>
+      <UseAIML>0</UseAIML>
+      <AllowBookMark>1</AllowBookMark>
+      <PlayStyle delay="">auto</PlayStyle>
+      <EnableBigImage>0</EnableBigImage>
+      <PnQs/>
+    </PageConfig>
+    <PnQs/>
+  </ITEM>
+</ID>

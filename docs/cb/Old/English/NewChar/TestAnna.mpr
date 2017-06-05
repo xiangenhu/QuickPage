@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project singlefile="true" flashversion="9" actionscript="3" size="250,200" htmlactivecontent="2" htmlextctl="true" htmlextevt="true" loader="standard" template="MessageAPI">
+	<stage id="Stage1">
+		<scene id="Scene1" name="Scene 1">
+			<character id="Char1" name="Anna" animationlibrary="Library/Characters/AnnaHead/AnnaHead.xml" position="0,0" size="250,200" defaultidle="simple" defaultvoice="Microsoft Zira Desktop"  bottom="pants1" top="shirt1" over="jacket1" eareye="hoopearings" hair="basicbun" addons="Library/Addons/RW2HeadClothesPack1/RW2HeadClothesPack1.xml,Library/Addons/RW2HeadClothesPack2/RW2HeadClothesPack2.xml,Library/Addons/RW2HeadHairPack1/RW2HeadHairPack1.xml,Library/Addons/RW2HeadHairPack2/RW2HeadHairPack2.xml,Library/Addons/RW2HeadHairPack3/RW2HeadHairPack3.xml,Library/Addons/RW2HeadMedicalPack/RW2HeadMedicalPack.xml,Library/Addons/RW2HeadPropPack1/RW2HeadPropPack1.xml"/>
+			<message id="Msg1" name="Greetings">
+				<say>
+					Hello, and welcome!
+				</say>
+			</message>
+			<message id="Msg2" name="I like you">
+				<say>
+					Hello!
+				</say>
+				<say>I like you very much.</say>
+			</message>
+		</scene>
+	</stage>
+</project>

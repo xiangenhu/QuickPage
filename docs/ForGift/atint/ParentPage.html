@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<META http-equiv="X-UA-Compatible" content="IE=EDGE">
+        <STYLE type="text/css">
+		</STYLE>
+        <SCRIPT type="text/javascript" src="js/Util/EMACS5CompatibilityPatches.js"></SCRIPT>
+		<SCRIPT type="text/javascript" src="js/Util/UUID.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/Util/Zet.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/Util/Serialization.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/SKO_Architecture/Messaging.js"></SCRIPT>
+        <SCRIPT type="text/javascript" src="js/SKO_Architecture/Client_Messaging_Gateway.js"></SCRIPT>
+    	<SCRIPT type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></SCRIPT>
+        
+		<SCRIPT type="text/javascript">
+			var PPATGIFT = (function($) {
+				var me = {};
+				var testService = null, oldReceiveMsg = null;
+				
+				me.init = function(){
+					$(function(){
+						testService = getTestService();
+						oldReceiveMsg = testService.receiveMessage;
+						testService.receiveMessage = onReceiveATMessage;
+					});				
+				};
+				
+				me.LaunchNew = function(){
+					sendMessageToChild("SKO", "LaunchNew", "",NextSKO.value);
+				};
+				
+				me.MoveToNext = function(){
+					sendMessageToChild("SKO", "MoveToNext", "","");
+				};
+			
+				
+				me.TeacherSay = function(){
+				var SpokenWords = document.getElementById("TeachWords");
+					sendMessageToChild("SKO", "TeacherSay", "",SpokenWords.value);
+				};
+				
+				me.Student1Say = function(){
+				
+				var SpokenWords = document.getElementById("Student1Words");
+					sendMessageToChild("SKO", "Student1Say", "",SpokenWords.value);
+				};
+				
+				me.Student2Say = function(){
+				
+				var SpokenWords = document.getElementById("Student2Words");
+					sendMessageToChild("SKO", "Student2Say", "",SpokenWords.value);
+				};
+				
+				
+				me.Student3Say = function(){
+				
+				var SpokenWords = document.getElementById("Student3Words");
+					sendMessageToChild("SKO", "Student3Say", "",SpokenWords.value);
+				};
+				
+				me.StopID = function(){
+					sendMessageToChild("SKO", "StopID", "","");
+				};
+				
+				function getTestService(){
+					var childFrame = $("#child")[0],
+						childWindow = childFrame.contentWindow? childFrame.contentWindow : childFrame.contentDocument.defaultView,
+						childGateway = Client_Messaging_Gateway.PostMessageGatewayStub("Child Gateway Stub", null, null, childWindow),
+						testService1 = Client_Messaging_Gateway.TestService("ParentTestService"),
+						mainPostingGateway = Client_Messaging_Gateway.PostMessageGateway("MainPostingGateway", [childGateway, testService1]);
+					return testService1;
+				}
+				
+				function sendMessageToChild(actor, verb, object, result){
+					if (testService == null){
+						testService = getTestService();
+					}
+					testService.sendTestMessage(actor, verb, object, result);
+				}
+	
+	
+				function onReceiveATMessage(msg){
+					oldReceiveMsg(msg);
+					var currentMsg=msg.getActor() + " " +
+						msg.getVerb() + " " +
+						msg.getObject() + " " + msg.getResult();
+						
+					document.getElementById("parentElement").innerHTML  = currentMsg;
+					document.getElementById("CumulativeMessagesHere").innerHTML  = msg.getResult()+"\n====\n"+document.getElementById("CumulativeMessagesHere").innerHTML;
+				};
+			
+				return me;
+			}(jQuery));
+	
+			PPATGIFT.init();
+		</SCRIPT>
+	</HEAD>
+	<BODY>
+	<TABLE align="center" height="100%"><TR>
+		<TD width="300" height="500">
+		<IFRAME id="child" src="http://54.223.152.164:8099/1024768/forGIFT/ATL.html?RL=0&guid=a770c6b4-4471-48ae-9e0a-f0ef131f6aa6&NW=1&DEBUGGING=0&IDcompWidth=250&RL=0&LCCSeedQuestionFontSize=11&YTL=NOYOUTUBE" frameborder="0" scrolling="no" width="100%" height="100%">
+		</IFRAME>
+		</TD>
+		<TD>
+		<TEXTAREA id="NextSKO" cols="40" rows="2" name="NextSKO">309810bd-94c9-4d70-94de-c2812475b617</TEXTAREA><BR>
+		<INPUT align="right" type="button" value="Move to a new SKO" onClick="PPATGIFT.LaunchNew()">
+			</INPUT><HR>
+		  <TEXTAREA id="parentElement" cols="80" rows="3" name="parentElement">Message comes here</TEXTAREA><HR>
+		  <TEXTAREA id="CumulativeMessagesHere" cols="80" rows="10" name="CumulativeMessagesHere">Cumulative Message comes here</TEXTAREA><HR>
+		  <INPUT align="right" type="button" value="Stop Here" onClick="PPATGIFT.StopID()">
+		  <INPUT align="right" type="button" value="Continue" onClick="PPATGIFT.MoveToNext()"><HR>
+		  
+		  
+		  <INPUT align="right" type="button" value="TeacherSay" onClick="PPATGIFT.TeacherSay()">
+			</INPUT>
+		  <TEXTAREA id="TeachWords" cols="40" rows="3" name="TeachWords">I am the Teacher</TEXTAREA><HR>
+		  
+		  
+		  <INPUT align="right" type="button" value="Student1Say" onClick="PPATGIFT.Student1Say()">
+			</INPUT>
+		  <TEXTAREA id="Student1Words" cols="40" rows="3" name="Student1Words">I am the student 1</TEXTAREA><HR>
+		  
+		  
+		  <INPUT align="right" type="button" value="Student2Say" onClick="PPATGIFT.Student2Say()">
+			</INPUT>
+		  <TEXTAREA id="Student2Words" cols="40" rows="3" name="Student2Words">I am the student 2</TEXTAREA><HR>
+		  
+		  
+		  <INPUT align="right" type="button" value="Student3Say" onClick="PPATGIFT.Student3Say()">
+			</INPUT>
+		  <TEXTAREA id="Student3Words" cols="40" rows="3" name="Student3Words">I am the Student 3</TEXTAREA><HR>
+		  
+		 
+        </TD>	
+		</TR>
+	</TABLE>
+	</BODY>
+</HTML>
+
+
+	</body>
+</html>
+
