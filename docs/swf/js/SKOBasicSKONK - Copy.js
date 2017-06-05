@@ -162,8 +162,8 @@
             attributes.id = "ATL";
             attributes.name = "ATL";
             attributes.align = "middle";
-            swfobject.embedSWF(
-                "../SWF/ATL.swf", "flashContent", 
+            swfobject.embedswf(
+                "../swf/ATL.swf", "flashContent", 
                 "1024", "768", 
                 swfVersionStr, xiSwfUrlStr, 
                 flashvars, params, attributes);
